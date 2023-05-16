@@ -5,9 +5,5 @@
 
   tasks:
     - name: Get and save hostname
-      win_shell: hostname
-      register: hostname_output
-
-    - name: Print Hostname
       debug:
-        var: hostname_output.stdout
+        var: "This the hostname "{{ansible_hostname}}""
