@@ -3,6 +3,6 @@
   hosts: student1-win1
 
   tasks:
-    - name: Get and save hostname
+    - name: Show hostname
       debug:
         msg: "This is the hostname: {{ ansible_hostname }}"
