@@ -1,7 +1,7 @@
 ---
 - name: Get the hostname of the Windows machine
   hosts: student1-win1
-  gather_facts: false  # No es necesario recopilar datos previos
+  gather_facts: false  # Not necessary
 
   tasks:
     - name: Get and save hostname
