@@ -5,5 +5,4 @@
   tasks:
     - name: Get and save hostname
       debug:
-        var: ansible_hostname
         msg: "This is the hostname: {{ ansible_hostname }}"
