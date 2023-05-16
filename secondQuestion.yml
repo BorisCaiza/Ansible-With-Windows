@@ -6,4 +6,4 @@
   tasks:
     - name: Get and save hostname
       debug:
-        var: "This the hostname "{{ansible_hostname}}""
+        var: "This is the hostname: {{ ansible_hostname | quote }}"
