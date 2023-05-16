@@ -1,0 +1,13 @@
+---
+- name: Obtener el hostname de la máquina Windows
+  hosts: windows_hosts
+  gather_facts: false  # No es necesario recopilar datos previos
+
+  tasks:
+    - name: Obtener el hostname
+      win_shell: hostname
+      register: hostname_output
+
+    - name: Imprimir el resultado en pantalla
+      debug:
+        var: hostname_output.stdout

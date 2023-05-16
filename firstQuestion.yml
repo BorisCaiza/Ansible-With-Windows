@@ -1,0 +1,8 @@
+---
+- name: FirstTest
+  hosts: windows
+  become: yes
+  gather_facts: no
+
+
+  
