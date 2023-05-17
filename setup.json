@@ -1,0 +1,123 @@
+{
+    "changed": false,
+    "invocation": {
+      "module_args": {
+        "_measure_subset": false,
+        "gather_timeout": 10,
+        "gather_subset": [
+          "all"
+        ],
+        "fact_path": null
+      }
+    },
+    "ansible_facts": {
+      "ansible_ip_addresses": [
+        "fe80::b66d:b4e3:aed8:c242%8",
+        "172.16.52.44"
+      ],
+      "ansible_windows_domain_role": "Stand-alone server",
+      "ansible_architecture2": "x86_64",
+      "ansible_user_gecos": "",
+      "ansible_distribution_major_version": "10",
+      "ansible_pagefiletotal_mb": 1408,
+      "ansible_os_name": "Microsoft Windows Server 2019 Datacenter",
+      "ansible_system_description": "",
+      "ansible_machine_id": "S-1-5-21-804307529-1298576582-2968546681",
+      "ansible_product_serial": "ec24594f-3659-009c-3ab8-93c819b2a5ef",
+      "ansible_system_vendor": "Amazon EC2",
+      "gather_subset": [
+        "all"
+      ],
+      "ansible_bios_version": "1.0",
+      "ansible_user_id": "Administrator",
+      "ansible_date_time": {
+        "epoch_local": "1684280798.02089",
+        "epoch_int": 1684280798,
+        "date": "2023-05-16",
+        "second": "38",
+        "tz": "UTC",
+        "iso8601_micro": "2023-05-16T23:46:38.020890Z",
+        "iso8601_basic_short": "20230516T234638",
+        "minute": "46",
+        "day": "16",
+        "weekday": "Tuesday",
+        "iso8601": "2023-05-16T23:46:38Z",
+        "tz_offset": "+00:00",
+        "iso8601_basic": "20230516T234638020890",
+        "epoch": "1684280798.02089",
+        "weekday_number": "2",
+        "hour": "23",
+        "year": "2023",
+        "month": "05",
+        "time": "23:46:38",
+        "weeknumber": "19"
+      },
+      "ansible_user_dir": "C:\\Users\\Administrator",
+      "ansible_win_rm_certificate_expires": "2026-05-14 16:47:09",
+      "ansible_processor_vcpus": 2,
+      "ansible_user_sid": "S-1-5-21-804307529-1298576582-2968546681-500",
+      "ansible_owner_contact": "",
+      "ansible_distribution": "Microsoft Windows Server 2019 Datacenter",
+      "ansible_processor": [
+        "0",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+        "1",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+      ],
+      "ansible_powershell_version": 5,
+      "ansible_uptime_seconds": 25162,
+      "module_setup": true,
+      "ansible_interfaces": [
+        {
+          "dns_domain": "us-east-2.compute.internal",
+          "connection_name": "Ethernet 3",
+          "default_gateway": "172.16.0.1",
+          "mtu": 1500,
+          "interface_name": "Amazon Elastic Network Adapter",
+          "ipv6": {
+            "address": "fe80::b66d:b4e3:aed8:c242%8",
+            "prefix": "64"
+          },
+          "macaddress": "02:D3:40:07:15:4F",
+          "speed": 25000,
+          "interface_index": 8,
+          "ipv4": {
+            "address": "172.16.52.44",
+            "prefix": "16"
+          }
+        }
+      ],
+      "ansible_distribution_version": "10.0.17763.0",
+      "ansible_windows_domain_member": false,
+      "ansible_swaptotal_mb": 0,
+      "ansible_hostname": "instance1",
+      "ansible_virtualization_role": "guest",
+      "ansible_memfree_mb": 3126,
+      "ansible_processor_count": 1,
+      "ansible_os_product_type": "server",
+      "ansible_netbios_name": "INSTANCE1",
+      "ansible_product_name": "t3.medium",
+      "ansible_virtualization_type": "kvm",
+      "ansible_os_installation_type": "Server Core",
+      "ansible_lastboot": "2023-05-16 16:47:17Z",
+      "ansible_architecture": "64-bit",
+      "ansible_bios_date": "10/16/2017",
+      "ansible_processor_cores": 1,
+      "ansible_fqdn": "instance1",
+      "ansible_domain": "",
+      "ansible_memtotal_mb": 4036,
+      "ansible_kernel": "10.0.17763.0",
+      "ansible_pagefilefree_mb": 1408,
+      "ansible_nodename": "instance1",
+      "ansible_os_family": "Windows",
+      "ansible_processor_threads_per_core": 2,
+      "ansible_owner_name": "EC2",
+      "ansible_windows_domain": "WORKGROUP",
+      "ansible_reboot_pending": false,
+      "ansible_system": "Win32NT"
+    },
+    "_ansible_verbose_override": true,
+    "_ansible_no_log": null
+  }
