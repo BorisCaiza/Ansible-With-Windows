@@ -6,4 +6,4 @@
   tasks:
     - name: Show hostname
       debug:
-        msg: "This is the windows version: {{ ansible_hostname }}"
+        msg: "This is the windows version: {{ ansible_distribution_version }}"
