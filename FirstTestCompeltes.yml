@@ -21,10 +21,10 @@
         name: W3Svc
         state: started
 
-    - name: Intsall firewall
-      win_feature:
-        name: Firewall-Feature
-        state: present
+   # - name: Intsall firewall
+   #   win_feature:
+   #     name: Firewall-Feature
+   #     state: present
 
     - name: Asegurar que el servicio Firewall de Windows esté activo
       win_service:
