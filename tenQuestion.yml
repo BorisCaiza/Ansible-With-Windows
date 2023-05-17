@@ -1,0 +1,8 @@
+---
+- name: Reboot Windows
+  hosts: student1-win1
+  gather_facts: false
+
+  tasks:
+    - name: RReboot
+      win_reboot:
