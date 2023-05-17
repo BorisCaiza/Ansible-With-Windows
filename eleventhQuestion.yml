@@ -6,4 +6,4 @@
   tasks:
     - name: Cambiar el hostname
       win_hostname:
-        name: Nombre de Prueba
+        name: NombreDePrueba
