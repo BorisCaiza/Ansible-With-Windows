@@ -1,0 +1,9 @@
+---
+- name: Cambiar hostname de la máquina
+  hosts: tu_host
+  gather_facts: false
+
+  tasks:
+    - name: Cambiar el hostname
+      win_hostname:
+        name: Nombre de Prueba
