@@ -1,9 +1,12 @@
 ---
 - name: Cambiar hostname de la máquina
   hosts: student1-win1
-  gather_facts: false
 
   tasks:
     - name: Cambiar el hostname
       win_hostname:
         name: NombreDePrueba
+    
+    - name: Show hostname
+      debug:
+         msg: "This is the hostname: {{ ansible_hostname }}"
