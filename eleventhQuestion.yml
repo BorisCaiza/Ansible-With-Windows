@@ -1,6 +1,6 @@
 ---
 - name: Cambiar hostname de la máquina
-  hosts: tu_host
+  hosts: student1-win1
   gather_facts: false
 
   tasks:
