@@ -8,4 +8,3 @@
         line: "ANSIBLE CON WINDOWS"
         regexp: "^(.*)"
         backrefs: yes
-        validate: "Test-Path C:\tmp\reto1\reto1_content"
