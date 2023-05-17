@@ -1,8 +1,8 @@
-- name: Cambiar la primera línea del archivo
+- name: Change the first line of the file
   hosts: student1-win1
 
   tasks:
-    - name: Modificar la primera línea del archivo
+    - name: Modify the first line of the file
       win_lineinfile:
         path: C:\tmp\reto1\reto1_content
         line: "ANSIBLE CON WINDOWS"

@@ -6,6 +6,13 @@
     - name: Cambiar el hostname
       win_hostname:
         name: NombreDePrueba
+
+
+    - name: Reboot
+      win_reboot:
+
+      
+
     
     - name: Show hostname
       debug:
