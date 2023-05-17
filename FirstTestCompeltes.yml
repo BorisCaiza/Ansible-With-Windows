@@ -21,16 +21,16 @@
         name: W3Svc
         state: started
 
-   # - name: Intsall firewall
-   #   win_feature:
-   #     name: Windows-Firewall-Feature
-   #     state: present
+    - name: Intsall firewall
+      win_feature:
+        name: Windows-Firewall-Feature
+        state: present
 
-   # - name: Asegurar que el servicio Firewall de Windows esté activo
-   #   win_service:
-   #     name: MpsSvc
-   #     start_mode: auto
-   #     state: started
+    - name: Asegurar que el servicio Firewall de Windows esté activo
+      win_service:
+        name: MpsSvc
+        start_mode: auto
+        state: started
 
     - name: Open port for site on the firewall
       win_firewall_rule:
