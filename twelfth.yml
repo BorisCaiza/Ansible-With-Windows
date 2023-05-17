@@ -5,7 +5,7 @@
     - name: Tomar backup del archivo
       win_copy:
         src: C:\tmp\reto1\reto1_content
-        dest: C:\tmp\reto1\reto1_content\reto1_content_back
+        dest: C:\tmp\reto1\reto1_content_back
         remote_src: yes
 
     - name: Agregar contenido al archivo
