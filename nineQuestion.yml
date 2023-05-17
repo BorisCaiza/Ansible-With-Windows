@@ -6,5 +6,5 @@
   tasks:
     - name: Actualizar todos los paquetes con Chocolatey
       win_chocolatey:
-        name: '*'
+        name: all
         state: latest
