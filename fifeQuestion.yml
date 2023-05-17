@@ -1,7 +1,7 @@
 ---
 - name: Enable the W3Svc service in the Firewall
   hosts: student1-win1
-
+   gather_facts: false
   tasks:
     - name: Open port for site on the firewall
       win_firewall_rule:
