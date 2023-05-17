@@ -1,9 +1,10 @@
 ---
-- name: Update all packages
+- name: Actualizar todos los paquetes en el servidor
   hosts: student1-win1
+  gather_facts: false
 
   tasks:
-    - name: update
+    - name: Actualizar todos los paquetes con Chocolatey
       win_chocolatey:
         name: '*'
         state: latest
