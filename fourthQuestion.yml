@@ -14,8 +14,8 @@
         state: started
 
     - name: Intsall firewall
-      win_chocolatey:
-        name: microsoft-windows-firewall
+      win_feature:
+        name: Net-Framework-Features
         state: present
 
     - name: Asegurar que el servicio Firewall de Windows esté activo
