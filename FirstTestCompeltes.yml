@@ -1,0 +1,109 @@
+---
+- name: FirstTest
+  hosts: windows
+
+  tasks:
+    - name: Show hostname
+      debug:
+        msg: "This is the hostname: {{ ansible_hostname }}"
+
+    - name: Show Windows Version
+      debug:
+        msg: "This is the windows version: {{ ansible_distribution_version }}"
+    
+    - name: install iis
+      win_feature:
+        name: Web-Server
+        state: present
+
+    - name: start iis service
+      win_service:
+        name: W3Svc
+        state: started
+
+   # - name: Intsall firewall
+   #   win_feature:
+   #     name: Windows-Firewall-Feature
+   #     state: present
+
+   # - name: Asegurar que el servicio Firewall de Windows esté activo
+   #   win_service:
+   #     name: MpsSvc
+   #     start_mode: auto
+   #     state: started
+
+    - name: Open port for site on the firewall
+      win_firewall_rule:
+        name: Regla
+        enable: yes
+        state: present
+        localport: 8080
+        action: Allow
+        direction: In
+        protocol: Tcp
+
+
+    - name: Create directory /tmp/reto1
+      win_file:
+        path: C:\tmp\reto1
+        state: directory
+
+
+    - name: Create file in /tmp/reto1/reto1_content
+      win_file:
+        path: C:\tmp\reto1\reto1_content
+        state: touch
+
+
+    - name: Print in file windows version
+      win_copy:
+        content: "This is the hostname: {{ ansible_hostname }}"
+        dest: C:\tmp\reto1\reto1_content
+
+
+    - name: Update all Packages
+      win_chocolatey:
+        name: all
+        state: latest
+
+
+    - name: Reboot
+      win_reboot:
+
+
+    - name: Cambiar el hostname
+      win_hostname:
+        name: NombreDePrueba
+
+
+    - name: Reboot
+      win_reboot:
+
+
+    - name: Show hostname
+      debug:
+         msg: "This is the hostname: {{ ansible_hostname }}"
+
+
+
+    - name: Do a backup
+      win_copy:
+        src: C:\tmp\reto1\reto1_content
+        dest: C:\tmp\reto1\reto1_content_back
+        remote_src: yes
+
+    - name: ADD content to the file
+      win_lineinfile:
+        path: C:\tmp\reto1\reto1_content
+        line: "ESTA ES UNA PRUEBA"
+        create: yes
+        insertafter: EOF
+
+
+
+    - name: Modify the first line of the file
+      win_lineinfile:
+        path: C:\tmp\reto1\reto1_content
+        line: "ANSIBLE CON WINDOWS"
+        regexp: "^(.*)"
+        backrefs: yes

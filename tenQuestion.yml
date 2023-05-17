@@ -4,5 +4,5 @@
   gather_facts: false
 
   tasks:
-    - name: RReboot
+    - name: Reboot
       win_reboot:
