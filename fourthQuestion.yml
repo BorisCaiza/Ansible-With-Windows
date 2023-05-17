@@ -9,9 +9,9 @@
         state: present
 
     - name: start iis service
-        win_service:
-          name: W3Svc
-          state: started
+      win_service:
+        name: W3Svc
+        state: started
 
     - name: Intsall firewall
       win_chocolatey:
