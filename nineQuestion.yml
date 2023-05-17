@@ -1,0 +1,9 @@
+---
+- name: Update all packages
+  hosts: student1-win1
+
+  tasks:
+    - name: update
+      win_chocolatey:
+        name: '*'
+        state: latest
